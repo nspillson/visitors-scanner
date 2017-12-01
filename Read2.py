@@ -11,7 +11,7 @@ while True:
     print(id)
     print(text)
 
-    r = requests.get('http://listen-for-badge-returned.azurewebsites.net/api/badge?badge-id=' + str(id))
+    r = requests.get('http://listen-for-badge-returned.azurewebsites.net/api/badgereturn?badge-identifier=' + str(id))
     print(r)
 
 GPIO.cleanup()
